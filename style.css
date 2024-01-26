@@ -1,0 +1,251 @@
+@font-face {
+    font-family: archi;
+    src: url(images/Apercu-Font-Family/Apercu);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: rgb(2, 2, 102);
+        transition: 0.5s;
+
+}
+body.active{
+    background: #000;
+}
+#toggle.active{
+    background: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0,0.1),
+                inset 0 2px 4px rgba(0, 0, 0,0.1),
+                inset 0 -4px 8px rgba(0, 0, 0,0.05);
+}
+#toggle{
+    position: relative;
+    top: 20px;
+    display: flex;margin:0px 60%;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 25px;
+    background: #222;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0,0.1),
+                inset 0 8px 60px rgba(0, 0, 0,0.1),
+                inset 0 -4px 4px rgba(0, 0, 0,0.1);
+}
+#toggle .indicator{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px  4px rgba(255, 255, 255, 0.2),
+                inset 0 -4  px  4px rgba(255, 255, 255, 0.2);
+    background:linear-gradient(to bottom ,#444,#222);
+    transition: 0.5s;
+    
+}
+#toggle.active  .indicator{
+    left: 40px;
+    background:linear-gradient(to bottom , #aa9d9d,#f9f9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px  4px rgba(255, 255, 255, 0.2),
+                inset 0 -4  px  4px rgba(255, 255, 255, 0.2);
+}
+#container{
+    width: 500px;
+    height: 550px;
+    background-color: black;
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    left: 30%; 
+}
+#container.active{
+    color: black;
+    background: #eaeaea;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+    left: 20px;
+    transition: 0.5s;
+}
+#container .cirleImage img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+}#menuList{
+    position: relative;
+    top: 10px;
+}
+#menuList.active{
+    color: #fff;
+    background: #000;
+}
+.heading h4{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ h4.active{
+    color: #000;
+}
+#menuList{
+    background-color: rgb(190, 211, 204);
+    border: none;
+    border-radius: 5px;
+    height: 24px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+#container .textarea{
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+}
+#container .textarea textarea{
+    width: 95%;
+    height: 200px;
+    font-size: 25px;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    left: 10px;
+    border: none;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+}
+#container .background{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+}
+
+#container .btn button{
+    width: 95%;
+    height: 40px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    top: 80px;
+    left: 11px;
+    transition: 0.5s;
+}
+#container .btn button:hover{
+    background-color: #fff;
+    border: 2px solid blue;
+    color: black;
+    font-style: bold;
+    transition: 0.5s;
+}
+button:hover,
+button:focus{
+    background-color: #fff;
+    border: 2px solid blue;
+    color: black;
+    font-style: bold;
+}
+#container .background {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#container .background:hover{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+#container .background  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#container .color-input{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+#container .add{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+    display: flex;
+    transition: 0.5s;
+    justify-content: space-around;    
+}
+#container .add:hover{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+#container .he h4{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 15px;
+    transition: 0.5s;
+}
+#container .icons img,i{
+    margin: 5px;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#container .fonts{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+}
+#container .fonts i{
+    color: #fff;
+    margin: 10px 10px;
+    padding: 10px 63px;
+    
+    
+    transition: 0.5s;
+}
+#container .fonts i:hover{
+    color: black;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
